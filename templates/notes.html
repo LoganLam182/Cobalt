@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Title of the Webpage -->
+        <title>Colbalt</title>
+        
+        <link rel="icon" href="chinaCat.png" type="png">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+        <!-- Header 1-6 there is only 1-6 -->
+        
+        <h1 id="main-header">
+            <img src="{% static 'images/chinaCat.png' %}" alt="Colbalt Icon" id="icon_Image">
+            Colbalt
+
+        </h1>
+        <!-- the #blah is the "id" of somthing the something here
+         is the h1 header above is just sets the style to whats
+         in the main-header -->
+        <h2>Heading but another one</h2>
+        <h3>sdsd</h3>
+        <h4>haha</h4>
+        <h5>bruh</h5>
+        <h6>maybe</h6>
+        
+        <!-- Paragraph  
+         "Strong" bolds text
+         "a" allows for a link
+         "a" can be used for img too-->
+        <p>Lorem <strong> ipsum dolor sit amet consectetur </strong> 
+            adipisicing elit. Illum minus ullam aliquam explicabo 
+            <a href="">deleniti saepe, facere ipsum obcaecati commodi dolor </a>
+            eveniet, quibusdam aliquid? Fugit quod eius voluptatem, 
+            laborum fugiat cupiditate?</p>
+
+            <a href="">
+                <img src="IMAGE FILE NAME" alt="text that is displayed if img cannot be found">
+            </a>
+
+        <!-- Unordered List basically bulletpoints -->
+        <ul id="listed-pair">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+
+        </ul>
+
+        <!-- Ordered List just a numbered list -->
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+
+        <!-- Makes a table  -->
+        <table>
+
+            <!-- Makes a header area of a table -->
+            <thead>
+                <!-- Table row -->
+                <tr>
+                    <!-- Tables data -->
+                    <td>Information</td>
+                </tr>
+            </thead>
+
+            <!-- The header body -->
+            <tbody>
+                <tr>
+                    <!-- Tables data -->
+                    <td>Information in body</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> <!-- Line break on the page -->
+        <hr> <!-- Adds a horizontal line break -->
+
+        <!-- A usable form, ugly, contains a attribute "action", 
+         action does things like open a file from server
+         attribute "method" can be "POST" adds data to database
+         can aslo be "GET" but its worse so use "POST"-->
+        <form action="somting.php" method="POST">
+            <div> <!-- block level elements so forces non block lvl elements on new line -->
+                <label>First Name</label>
+                <!-- type is what should be inputted here is is text
+                name is what the name of the form is so it can be used
+                elsewhere -->
+                <input type="text" name="First-Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="Last-Name">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <!-- Similar to text as a type validates the email adress
+                 so if its not valid error is shown-->
+                <input type="email" name="Last-Name">
+            </div>
+        </form>
+            
+            
+    </body>
+</html>
+
+
+
+    <body class="side-widget">
+        <div class="calendar-wrapper">
+            <header class="month-header">
+                <p class="current-date">May 2026</p>
+                <div class="icons">
+                    <span class="prev-month">&lt</span>
+                    <span class="next-month">&gt</span>
+                </div>
+            </header>
+
+            <div class="calendar">
+                <ul class="day-of-week">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>T</li>
+                    <li>W</li>
+                    <li>T</li>
+                    <li>F</li>
+                    <li>S</li>
+                </ul>
+                <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+        </div>
+
+    </body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cobalt - Organize Your Day</title>
+        <link rel="icon" type="png" href="{% static 'images/Cobalt_Rock.png' %}" >
+        <link rel="stylesheet" href="{% static 'homepage_css/style.css' %}">
+    </head>
+
+    
+
+    <body>
+        <header>
+            <div>
+                <a href="/cobalt"><img src="{% static "images/Cobalt_Rock.png" %}" width="50" alt="Cobalt" class="cobalt-icon"></a>
+            </div>
+
+            <div class="cobalt-text">
+                <a href="/cobalt" class="cobalt-bnt"><strong>Cobalt</strong></a>
+            </div>
+
+            <div class="learn-more-text">
+                <a href="information/" class="learn-more-btn">Learn More</a>
+            </div>
+        </header>
+
+        <div class="homepage-information">
+            <img src="{% static "images/chinaCat.png" %}" alt="CAT" width="500" class="homepage-image">
+            <h1 class="main-text">Organize Your Shit</h1>
+            <br>
+            <h3 class="sub-text-to-main-text">Brought to you by a Dumbass</h3>
+            <br>
+            <a href="calendar/" class="open-calendar-btn">Open Cobalt Through the Webpage</a>
+        </div>
+
+        
+    </body>
+</html>
